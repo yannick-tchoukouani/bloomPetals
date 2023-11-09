@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="contact-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="body">
+
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Entreprise</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="parent">
+
+            
+                <div class="row1">
+                    <div class="block">
+                        <h1>Des questions ?</h1>
+                             <p>Un problème, une question, envie de passer commande ? N'hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+                    </div>
+                    
+                
+                
+                <div class="row2">
+                    <div class="intro">
+                        <p>Si vous n'avez pas trouvé de réponses à vos questions, vous pouvez nous contacter en remplissant le formulaire ci-dessous :</p>
+                    </div>    
+                </div>
+                
+            
+                
+                <div class="row3">
+                    <div class="contact">
+                        <form action="traitement.php" method="post">
+                            <label for="civility">Civilité :</label>
+                            <select id="civility" name="civility">
+                                <option value="Monsieur">Monsieur</option>
+                                <option value="Madame">Madame</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                            <br>
+                            
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom">
+                            <br>
+                            
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" name="prenom">
+                            <br>
+                            
+                            <label for="adresse">Adresse postale :</label>
+                            <textarea id="adresse" name="adresse" rows="4" cols="50"></textarea>
+                            <br>
+                            
+                            <input type="checkbox" id="confidentialite" name="confidentialite" value="accepte">
+                            <label for="confidentialite">J'accepte les politiques de confidentialité de l'entreprise</label>
+                            <br>
+                            
+                            <input type="submit" value="Valider">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer class="footer">
+            <h2>Droits d'auteurs. 2023.</h2>
+        </footer>
+    </div>
